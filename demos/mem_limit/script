@@ -1,0 +1,5 @@
+#!/bin/bash
+
+../limiter/limiter data_mem 1000000 ./mem
+echo
+../limiter/limiter data_mem 2000000 ./mem
