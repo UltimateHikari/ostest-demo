@@ -1,3 +1,5 @@
+#define _GNU_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -5,6 +7,8 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <string.h>
+#include <sched.h>
+#include <sys/mount.h>
 
 #define S1(x) #x
 #define S2(x) S1(x)
@@ -17,6 +21,8 @@ int apply_cgroup_to_process();
 int write_cgroup_value(char *cgroup_name, char *controller_type, char *value_to_write);
 int create_cgroup(char *cgroup_name);
 int run_uut();
+int enter_mount_namespace();
+int create_restricted_mount();
 
 /*
  * Запускать с sudo
@@ -27,7 +33,9 @@ int main() {
 
     char *cgroup_name = "some-cgroup";
 
-    create_cgroup(cgroup_name);
+    if ((result = create_cgroup(cgroup_name)) != 0) {
+        return result;
+    }
 
     if ((result = configure_cgroup(cgroup_name)) != 0) {
         return result;
@@ -55,6 +63,36 @@ int main() {
     return 0;
 }
 
+int create_restricted_mount() {
+    int result;
+
+    if ((result = system("pwd")) != 0) {
+        printf(__LOG ": system() error, result: %d\n", result);
+        return result;
+    }
+
+    if ((result = system("mount -t tmpfs -o size=1M uut-mount ./uut-folder")) != 0) {
+        printf(__LOG ": system() error, result: %d\n", result);
+        return result;
+    }
+
+    if ((result = system("cp uut ./uut-folder")) != 0) {
+        printf(__LOG ": system() error, result: %d\n", result);
+        return result;
+    }
+
+    if ((result = system("pwd")) != 0) {
+        printf(__LOG ": system() error, result: %d\n", result);
+        return result;
+    }
+
+    if (chroot("./uut-folder") == -1) {
+        return error_out(__LOG);
+    }
+
+    return 0;
+}
+
 /*
  *  Создаем cgroup
  *  Возможно, не все контроллеры будут активны. У меня все контроллеры активны по-дефолту.
@@ -64,15 +102,20 @@ int main() {
 int create_cgroup(char *cgroup_name) {
     #define BUF_SIZE 255
     char command[BUF_SIZE] = {0};
-    int n_written = snprintf(command, BUF_SIZE, "rmdir /sys/fs/cgroup/%s && mkdir -p /sys/fs/cgroup/%s", cgroup_name, cgroup_name);
+    int n_written = snprintf(command, BUF_SIZE, "rmdir /sys/fs/cgroup/%s; mkdir -p /sys/fs/cgroup/%s; true", cgroup_name, cgroup_name);
     if (n_written < 0 || n_written >= BUF_SIZE) {
         printf(__LOG ": snprintf error, result: %d\n", n_written);
         return n_written;
     }
-    if (system(command) != 0) {
-        return error_out(__LOG);
-    }
     #undef BUF_SIZE
+
+    int result;
+    if ((result = system(command)) != 0) {
+        printf(__LOG ": system() error, result: %d\n", result);
+        return result;
+    }
+    printf("cgroup created\n");
+    return 0;
 }
 
 /**
@@ -83,6 +126,14 @@ int do_stuff_in_child() {
     printf("Начало настройки ограничений для uut, pid: %d\n", getpid());
 
     int result;
+
+//    if ((result = enter_mount_namespace()) != 0) {
+//        return result;
+//    }
+
+    if ((result = create_restricted_mount() != 0)) {
+        return result;
+    }
 
     // Включаем cgroup для процесса
     if ((result = apply_cgroup_to_process()) != 0) {
@@ -96,7 +147,40 @@ int do_stuff_in_child() {
 
     printf("Настройка готова, запускаем uut\n");
 
-    return run_uut();
+    //return run_uut();
+
+    if ((result = system("")) != 0) {
+        printf(__LOG ": system() error, result: %d\n", result);
+        return result;
+    }
+}
+
+/**
+ * Заходим в mount namespace. В любой другой можно так же.
+ */
+int enter_mount_namespace() {
+    __pid_t pid = getpid();
+
+    #define BUF_SIZE 255
+    char mount_namespace_file[BUF_SIZE] = {0};
+    int n_written = snprintf(mount_namespace_file, BUF_SIZE, "/proc/%d/ns/mnt", pid);
+    if (n_written < 0 || n_written >= BUF_SIZE) {
+        printf(__LOG ": snprintf error, result: %d\n", n_written);
+        return n_written;
+    }
+    #undef BUF_SIZE
+
+    int fd = open(mount_namespace_file, O_RDONLY | O_CLOEXEC);
+    if (fd == -1) {
+        return error_out(__LOG);
+    }
+
+    // Заходим в mount namespace
+    if (setns(fd, CLONE_NEWNS) == -1) {
+        return error_out(__LOG);
+    }
+
+    return 0;
 }
 
 /**
@@ -106,14 +190,18 @@ int configure_cgroup(char *cgroup_name) {
     int result;
 
     // Пример: макс оперативная память - киляет процесс
-    if ((result = write_cgroup_value(cgroup_name, "memory.max", "200000")) != 0) {
+    if ((result = write_cgroup_value(cgroup_name, "memory.max", "2000000")) != 0) {
         return result;
     }
 
     // Пример: макс число tid - не киляет процесс, возвращает Resource temporary unavailable при попытке создания нового потока
-    if ((result = write_cgroup_value(cgroup_name, "pids.max", "1")) != 0) {
+    if ((result = write_cgroup_value(cgroup_name, "pids.max", "10")) != 0) {
         return result;
     }
+
+    printf("cgroup configured\n");
+
+    return 0;
 }
 
 int write_cgroup_value(char *cgroup_name, char *controller_type, char *value_to_write) {
@@ -124,6 +212,7 @@ int write_cgroup_value(char *cgroup_name, char *controller_type, char *value_to_
         printf(__LOG ": snprintf error, result: %d\n", n_written);
         return n_written;
     }
+    #undef BUF_SIZE
 
     int fd = open(cgroup_file, O_WRONLY);
     if (fd == -1) {
@@ -148,9 +237,9 @@ int apply_cgroup_to_process() {
         return error_out(__LOG);
     }
     // Без превращения в строку не работает
-    char pid_str[sizeof(pid) + 1] = {0};
+    char pid_str[16] = {0};
     sprintf(pid_str, "%d", pid);
-    if (write(fd, &pid_str, sizeof(pid) + 1) == -1) {
+    if (write(fd, &pid_str, strlen(pid_str) + 1) == -1) {
         return error_out(__LOG);
     }
     // Обязательно закрываем, иначе не проставится cgroup
@@ -167,6 +256,7 @@ int run_uut() {
     if (execvp("./uut", argv) == -1) {
         return error_out(__LOG);
     }
+    return 0;
 }
 
 int error_out(char* log) {
