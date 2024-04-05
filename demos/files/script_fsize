@@ -1,0 +1,3 @@
+#!/bin/bash
+
+../limiter/limiter fsize 100000 ./fsize

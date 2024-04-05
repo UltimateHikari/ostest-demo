@@ -1,0 +1,3 @@
+#!/bin/bash
+
+../limiter/limiter fd 4 ./fd

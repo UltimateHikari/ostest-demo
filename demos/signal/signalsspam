@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo $(./app; echo $? > siglog) &
+
+sleep 0.5
+for i in {1..20}
+do
+   kill -SIGINT $(ps|grep app|awk '{print $1}')
+   echo $i
+done

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+../limiter/limiter child 33 ./fork
+echo
+../limiter/limiter child 1 ./fork
