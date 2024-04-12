@@ -1,7 +1,9 @@
 #pragma once
 
 /**
- * В child процессе применяем настройки (cgroup, прочее) и меняем этот child процесс на запускаемый uut (unit under test).
- * Uut будет запущен с необходимыми лимитами. Parent процесс увидит pid child'а и сможет за чем-то следить.
+ * В child процессе применяем настройки (cgroup, прочее),
+ * делаем второй форк,
+ * передаем pid нового child'а через pipedes
+ * и меняем второй child процесс через exec* на запускаемый uut (unit under test).
  */
-int do_stuff_in_child();
+int do_stuff_in_child(int pipedes);

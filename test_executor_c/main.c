@@ -3,9 +3,14 @@
 #include "observe_child.h"
 #include "do_stuff_in_child.h"
 #include "cgroup_stuff.h"
+#include "global_helpers.h"
 
 #include <unistd.h>
 #include <sys/ptrace.h>
+#include <sched.h>
+#include <sys/wait.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /*
  * Запускать с sudo
@@ -28,15 +33,54 @@ int main() {
         return result;
     }
 
-    // Можно было бы использовать vfork, чтобы нужно заставить parent процесс ждать, пока не произойдет exec* в child
-    // Но используем обычный fork, т.к. мы трейсим через strace и разрешаем сделать exec* в child только после подключения strace.
-    __pid_t pid = fork();
-
-    if (pid == 0) {
-        return do_stuff_in_child();
+    int pipedes[2];
+    if (pipe(pipedes) == -1) {
+        return error_out(__LOG);
     }
 
-    if ((result = observe_child(pid)) != 0) {
+    // Ниже делаем следующий прикол: форкаем процесс 2 раза
+    // Это делаем потому, что вызов unshare() для нового pid неймспейса не перемещает сам процесс в новый pid неймспейс
+    // Только форки этого процесса будут в новом pid неймспейсе
+    // Чтобы получить pid второго процесса (который станет uut), передаем его pid через pipe
+
+    __pid_t child_pid = fork();
+
+    // Child
+    if (child_pid == 0) {
+        if (close(pipedes[0]) == -1) {
+            return error_out(__LOG);
+        }
+
+        return do_stuff_in_child(pipedes[1]);
+    }
+
+    printf("Запущен первый child с pid: %d\n", child_pid);
+
+    if (close(pipedes[1]) == -1) {
+        return error_out(__LOG);
+    }
+
+    pid_t pid_to_observe;
+
+    // Надеемся, что за один раз прочитает из pipe все
+    if (read(pipedes[0], &pid_to_observe, sizeof(pid_to_observe)) != sizeof(pid_to_observe)) {
+        return error_out(__LOG);
+    }
+
+    printf("Получили pid uut: %d\n", pid_to_observe);
+
+    if (close(pipedes[0]) == -1) {
+        return error_out(__LOG);
+    }
+
+    int status;
+    if (waitpid(child_pid, &status, 0) == -1) {
+        return error_out(__LOG);
+    }
+    printf("Оригинальный child завершился со статусом: %d\n", status);
+
+    // Идем наблюдать за uut процессом (здесь он мог еще не сделать exec, это надо учитывать)
+    if ((result = observe_child(pid_to_observe)) != 0) {
         return result;
     }
 

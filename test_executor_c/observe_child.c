@@ -21,11 +21,10 @@ int observe_child(__pid_t pid) {
 
     //TODO: наблюдаем смотря на procfs
 
-    // Ждем завершения uut
-    int status;
-    if (waitpid(pid, &status, 0) == -1) {
-        return error_out(__LOG);
-    }
+    // И тут возникает прикол: uut не наш child (мы сделали двойной fork())
+    // Нельзя ждать его завершения через wait() / waitpid()
+    //TODO: сделать ожидание завершения процесса каким-то способом. Пока что просто делаем sleep...
+    sleep(10000000);
 
-    printf("Uut завершился со статусом %d\n", status);
+    //printf("Uut завершился со статусом %d\n", status);
 }

@@ -14,11 +14,11 @@ int observe_with_strace(__pid_t pid) {
     int result;
 
     // Трейсим через strace
-    // Сhild продолжает выполнение только после подключения strace -
-    // ***для этого используется tamper (inject) - в child фейлится первый вызов syscall clock_nanosleep, и child продолжает выполнение***
-    // К сожалению, в strace попадает куча вызовов до exec* - детектим фейл clock_nanosleep, последующий exec, и потом уже смотрим на вывод uut
+    // К сожалению, в strace попадает куча вызовов до exec* - их фильтруем
     // Было бы хорошо вызывать strace как библиотеку в Си, но такого готового нет
-    // Еще было бы хорошо найти более хороший способ заставить child ждать прикрепление strace
+
+    //TODO: Сейчас надеемся на то, что мы успеем подключиться за время sleep к child
+    // Найти более хороший способ заставить child ждать подключения strace
 
     //TODO: можно тесты на tampering (какие-то системные вызовы делают ошибки - посмотреть поведение программы в таком случае)
 
@@ -26,7 +26,7 @@ int observe_with_strace(__pid_t pid) {
     generate_random_string(random_str, 10);
     STRING_FORMAT(strace_output_file_name, "./strace_output/%s.txt", random_str)
 
-    STRING_FORMAT(strace_command, "strace -e inject=clock_nanosleep:error=EFAULT:when=1 -f -p %d 2>&1", pid)
+    STRING_FORMAT(strace_command, "strace -f -p %d 2>&1", pid)
 
     if ((result = start_ptrace_and_write_to_file(pid, strace_command, strace_output_file_name)) != 0) {
         return result;

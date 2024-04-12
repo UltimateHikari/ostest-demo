@@ -13,7 +13,13 @@ void* func(void *ptr) {
 }
 
 int main() {
+    printf("PID IN UUT: %d\n", getpid());
+
     printf("Hello World\n");
+
+    system("pwd");
+
+    system("ps faux");
 
     sleep(10);
 
@@ -93,7 +99,7 @@ int main() {
         return 1;
     }
 
-    printf("child ended with status %d\n", status);
+    printf("Child ended with status %d\n", status);
 
 //    pthread_t t;
 //    pthread_create(&t, NULL, func, NULL);

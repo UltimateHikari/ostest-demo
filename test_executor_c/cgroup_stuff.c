@@ -21,17 +21,16 @@ int create_cgroup(char *cgroup_name) {
     return 0;
 }
 
-
 int configure_cgroup(char *cgroup_name) {
     int result;
 
     // Пример: макс оперативная память - киляет процесс
-    if ((result = write_cgroup_value(cgroup_name, "memory.max", "6000000")) != 0) {
+    if ((result = write_cgroup_value(cgroup_name, "memory.max", "10000000")) != 0) {
         return result;
     }
 
     // Пример: макс число tid - не киляет процесс, возвращает Resource temporary unavailable при попытке создания нового потока
-    if ((result = write_cgroup_value(cgroup_name, "pids.max", "50")) != 0) {
+    if ((result = write_cgroup_value(cgroup_name, "pids.max", "100")) != 0) {
         return result;
     }
 
