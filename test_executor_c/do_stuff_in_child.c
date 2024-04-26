@@ -12,6 +12,7 @@
 #include <sys/ptrace.h>
 #include <time.h>
 #include <sys/stat.h>
+#include <sys/mount.h>
 
 /**
  * Делаем второй fork и меняем новый child (запущенный через новый fork) на uut через exec*
@@ -39,16 +40,13 @@ int do_stuff_in_child(int pipedes) {
 }
 
 int run_uut(int pipedes) {
+    int result;
+
     // Переходим в pid namespace - но этот процесс НЕ переходит в новый pid namespace, пока мы не сделаем второй форк
     // Внимание: нельзя создавать child'ы процесса между unshare pid и fork, иначе pid namespace будет уничтожен (или около того) после завершения child'а
     // Например, нельзя вызывать system() в Си
-    if (unshare(CLONE_NEWPID) == -1) {
-        return error_out(__LOG);
-    }
-
-    // Отказываемся от sudo прав перед запуском uut
-    if (setuid(9999) == -1) {
-        return error_out(__LOG);
+    if ((result = unshare_pid()) != 0) {
+        return result;
     }
 
     pid_t pid_of_a_new_child = fork();
@@ -61,6 +59,16 @@ int run_uut(int pipedes) {
     if (pid_of_a_new_child == 0) {
         // Обязательно закрываем пайп в uut, чтобы следа от этого не оставалось
         if (close(pipedes) == -1) {
+            return error_out(__LOG);
+        }
+
+        // Обязательно маунтим /proc только после изменения PID namespace, иначе получим хостовый /proc (а так будет ограниченный)
+        if ((result = mount_proc_sys_dev()) != 0) {
+            return result;
+        }
+
+        // Отказываемся от sudo прав перед запуском uut
+        if (setuid(9999) == -1) {
             return error_out(__LOG);
         }
 

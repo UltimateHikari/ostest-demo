@@ -22,11 +22,15 @@ int enter_required_namespaces() {
         return error_out(__LOG);
     }
 
-    if (mount("uut-mount", "./uut-folder", "tmpfs", 0, "size=1M") == -1) {
+    if (mount("uut-tmpfs", "./uut-folder/tmpfs", "tmpfs", 0, "size=1M") == -1) {
         return error_out(__LOG);
     }
 
-    int result = system("mkdir ./uut-folder/proc && mkdir ./uut-folder/sys && cp ./uut ./uut-folder");
+    if (mount("uut-lower2-tmpfs", "./uut-folder/lower2", "tmpfs", 0, "size=50M") == -1) {
+        return error_out(__LOG);
+    }
+
+    int result = system("mkdir ./uut-folder/tmpfs/work && mkdir ./uut-folder/tmpfs/upper && cp ./uut ./uut-folder/lower2");
     if (result == -1) {
         return error_out(__LOG);
     }
@@ -35,26 +39,47 @@ int enter_required_namespaces() {
         return result;
     }
 
-    // Точно маунтим proc, чтобы нельзя было видить процессы хоста
-    if (mount("new_proc", "./uut-folder/proc", "proc", MS_NOSUID | MS_NODEV | MS_NOEXEC | MS_RELATIME, NULL) == -1) {
-        return error_out(__LOG);
-    }
+    // Не уверен, куда маунтить надо системные маунты (lower/upper/merged)
+    // +Потенциально можно обойти лимит диска tmpfs, если писать в эти маунты
 
-    if (mount("new_sysfs", "./uut-folder/sys", "sysfs", MS_NOSUID | MS_NODEV | MS_NOEXEC | MS_RELATIME, NULL) == -1) {
+    if (mount("uut-overlay", "./uut-folder/merged", "overlay", 0, "lowerdir=./uut-folder/lower:./uut-folder/lower2,upperdir=./uut-folder/tmpfs/upper,workdir=./uut-folder/tmpfs/work") == -1) {
         return error_out(__LOG);
     }
 
     // Обычно после chroot мы теряем доступ ко всем файлам кроме тех, который лежат в uut-folder (то есть нельзя запустить /bin/bash, нельзя использовать в Си system(), прочее)
     // Но мы ранее замаунтили что-то в uut-folder, так что часть проблем решена
-    //TODO: если делать chroot, то дальше фейлится exec (и все равно нельзя запустить bash, т.к. не замаунтили его), попробовать использовать overlayfs
-//    if (chroot("./uut-folder") == -1) {
-//        return error_out(__LOG);
-//    }
+    if (chroot("./uut-folder/merged") == -1) {
+        return error_out(__LOG);
+    }
 
     // chroot не меняет текущую рабочую директорию, это должны сделать мы
-//    if (chdir("/") == -1) {
-//        return error_out(__LOG);
-//    }
+    if (chdir("/") == -1) {
+        return error_out(__LOG);
+    }
+
+    return 0;
+}
+
+int unshare_pid() {
+    if (unshare(CLONE_NEWPID) == -1) {
+        return error_out(__LOG);
+    }
+
+    return 0;
+}
+
+int mount_proc_sys_dev() {
+    if (mount("proc", "/proc", "proc", MS_NOSUID | MS_NODEV | MS_NOEXEC | MS_RELATIME, NULL) == -1) {
+        return error_out(__LOG);
+    }
+
+    if (mount("sys", "/sys", "sysfs", MS_NOSUID | MS_NODEV | MS_NOEXEC | MS_RELATIME, NULL) == -1) {
+        return error_out(__LOG);
+    }
+
+    if (mount("dev", "/dev", "devtmpfs", MS_NOSUID | MS_NODEV | MS_NOEXEC | MS_RELATIME, NULL) == -1) {
+        return error_out(__LOG);
+    }
 
     return 0;
 }
