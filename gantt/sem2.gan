@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-09-01" view-index="0" gantt-divider-location="697" resource-divider-location="300" version="3.3.3309" locale="en_US">
+    <description/>
+    <view zooming-state="default:10" id="gantt-chart">
+        <field id="tpd15" name="Notes" width="20" order="0"/>
+        <field id="tpd3" name="Name" width="313" order="0"/>
+        <field id="tpd12" name="Cost" width="63" order="1"/>
+        <field id="tpd6" name="Duration" width="68" order="2"/>
+        <field id="tpd13" name="Resources" width="252" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#ffff99 #0000ff #ff9900 #99ffcc #cc99ff #99ff99]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="32afcd90d2ae4e35bc2960b4353186ee" name="Общее управление" color="#99ff99" meeting="false" start="2024-09-02" duration="85" complete="0" expand="true" cost-manual-value="60.0" cost-calculated="false"/>
+        <task id="18" uid="a488252e25944db4884b83245a9c2050" name="Web: управление" color="#99ff99" meeting="false" start="2024-09-16" duration="75" complete="0" expand="true" cost-manual-value="40.0" cost-calculated="false"/>
+        <task id="19" uid="6df692ab3058460b8a4e753cc1989e0f" name="Тесты: управление" color="#99ff99" meeting="false" start="2024-09-16" duration="75" complete="0" expand="true" cost-manual-value="40.0" cost-calculated="false"/>
+        <task id="4" uid="a99ea01f8b8c4fe1b7a36b0965961ada" name="Фаза 0: подготовка" meeting="true" start="2024-09-13" duration="0" complete="0" expand="true"/>
+        <task id="1" uid="e1aa39b47b1b47b2b03d58565802ac1b" name="Фронт: инструкции" color="#ffff99" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
+        <task id="3" uid="6ac1978a9cb54ec3a859b14017f33b67" name="Фронт: заготовка" color="#ffff99" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="2" uid="3d96ded7a6af499287c19897bbce37f5" name="Бэк: инструкции" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
+        <task id="5" uid="6b0c07a3b0c245d29ab250ed6f84ca46" name="Бэк: заготовка" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false"/>
+        <task id="6" uid="bb56a126cb74486eb2e8e235fb140664" name="Схема данных" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="7" uid="48ce371adc5845edbbd3d1615e113571" name="Описание API" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="8" uid="10872d5bba1847ae9808536b5a3d80f9" name="Exec: демо" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false"/>
+        <task id="9" uid="0d2105efb56c4346b2f0946c56f71071" name="Exec: инструкции" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
+        <task id="10" uid="3019422acb0a43a1aba041b59353a7a6" name="Тесты: заготовка" meeting="false" start="2024-09-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="11" uid="01ece70c84af43248a1cc345cf9a2fe6" name="Фаза 1" meeting="true" start="2024-10-25" duration="0" complete="0" expand="true"/>
+        <task id="21" uid="494931cde02b4de6a0c50257cb98eec2" name="Тесты: доанализ требований" meeting="false" start="2024-09-16" duration="25" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
+        <task id="22" uid="6bf4df2a802a4eeab23e35d9248c34db" name="Web: доанализ требований" meeting="false" start="2024-09-16" duration="25" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
+        <task id="16" uid="67b082a237c1484dbac6b2b69dd12919" name="Тесты: обучение" color="#cc99ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" uid="67f8145ba19d4b2fbe3cac7bc39cf597" name="Тесты исполняемого файла" color="#99ffcc" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="24" uid="7fc8d19313a84daa9a1d0acf98289c04" name="Тесты модуля конфигурации" color="#99ffcc" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="25" uid="b535343ceacc40a6ad4392cf5151abda" name="Тесты cli" color="#99ffcc" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="26" uid="97878f96f69947dfa090e9e99143ecde" name="Тесты логгера" color="#99ffcc" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="27" uid="15fba01258b04b6a9b0c62ac13b53af4" name="Тесты IPC" color="#99ffcc" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="28" uid="e1825f9fff964aa0bcd3920c524775ab" name="Тесты корректности кэша" color="#99ffcc" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="15" uid="5aaf995662ae4d70bb7ab91d058eb6bb" name="Exec: обучение" color="#cc99ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+            <depend id="29" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="29" uid="619303c65c5a432089acd7f3797a7d8e" name="Exec: запуск бинарника" color="#ff9900" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+            <depend id="30" type="2" difference="0" hardness="Strong"/>
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+            <depend id="32" type="2" difference="0" hardness="Rubber"/>
+            <depend id="33" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="30" uid="988de18a76ed43fd894df39eef545d7e" name="Exec: получение stdin" color="#ff9900" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="31" uid="a956de4e9721406095a91d1f68975a90" name="Exec: получение сокета" color="#ff9900" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="32" uid="17ad0711d48444e2b87f178d00035b50" name="Exec: получение вывода" color="#ff9900" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="33" uid="caf625a816874a62b0d93c38b5dc79a7" name="Exec: получение статистик /proc" color="#ff9900" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="17" uid="ccea6896d2cb498caf6fb6d78d1792d7" name="Фронт: обучение" color="#cc99ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="49" uid="507f768b047b4e689a3476378148c673" name="Авторизация пользователя" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+            <depend id="50" type="2" difference="0" hardness="Strong"/>
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="50" uid="7d1f435cc6ec42349788e9acb9b51928" name="Изменение пароля" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="52" uid="8857c55f63224c1186bddac8162ed1fe" name="Получение групп для пользователя.." color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+            <depend id="53" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="53" uid="aac97617e8e7449b8ce877eac869ac7a" name="Создание редактирование группы" color="#0000ff" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="51" uid="3ee03904b0c740fb896af1e803a8aa87" name="Интеграция: пользователи" color="#8cb6ce" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+        <task id="54" uid="e3d7d30118af427997d0dabaf757b28d" name="Восстановление пароля" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="56" uid="8d9ea406c3aa4165993e90524fab4317" name="Welcome страница" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="55" uid="19da76ef174c4c939b0efccbebe70f06" name="Страница входа" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+            <depend id="58" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="57" uid="eb7a1fc2ffa64e3ead47045888366589" name="Навигация в шапке" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="58" uid="aeb02307a33a4547941eec5495aa6290" name="Личный кабинет" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="59" uid="44c7d3cd95104aa5a32868c6d46fe527" name="Создание редактирование группы" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="60" uid="998607ffa03a43c08a8b2b33be406154" name="Экран групп" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+            <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="13" uid="cca54003786848bcbc3d88ca6644a528" name="Фаза 2" meeting="true" start="2024-11-29" duration="0" complete="0" expand="true"/>
+        <task id="34" uid="1c48b1b3805d48c68219015d49733c17" name="Тесты: доанализ требований 2" color="#8cb6ce" meeting="false" start="2024-10-28" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+        <task id="35" uid="4bc5204429e34df49cf226e6cd3502b5" name="Web: доанализ требований 2" color="#8cb6ce" meeting="false" start="2024-10-28" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+        <task id="36" uid="3b0cd6bd49854b8f83beacdad2c957a3" name="Тесты многозадачности" color="#99ffcc" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="37" uid="3de85d8afdaf4954a32e246603198d4b" name="Тесты сети" color="#99ffcc" meeting="false" start="2024-10-28" duration="10" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="38" uid="34b70e53c150488ab0a8361d712477d3" name="Тесты кэша" color="#99ffcc" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+        <task id="39" uid="39bcda48456548a3a4dfbecca26c2720" name="Нагрузочные тесты" color="#99ffcc" meeting="false" start="2024-11-04" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="45" uid="a47c0a4bc6f84615ba7d097f03e3def2" name="Exec: жесткие ограничения cgroup 1" color="#ff9900" meeting="false" start="2024-10-28" duration="15" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="46" uid="acbd3dc61263422ea8db92172a446331" name="Exec: жесткие ограничения cgroup 2" color="#ff9900" meeting="false" start="2024-10-28" duration="15" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="14" uid="1591ccfc3d404e74b45767d82c3cb02d" name="Фаза 3" meeting="true" start="2024-12-27" duration="0" complete="0" expand="true"/>
+        <task id="41" uid="8ba225a1c418429f89d85a7ce12923f6" name="Тесты: доанализ требований 3" color="#8cb6ce" meeting="false" start="2024-12-02" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+        <task id="42" uid="c6a4088b00ef41d1bc9c694d8edf035d" name="Web: доанализ требований 3" color="#8cb6ce" meeting="false" start="2024-12-02" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+        <task id="43" uid="ef3d5f5f88e842b39ba4dfe6bdbedc15" name="Тесты под valgrind и санитайзерами" color="#99ffcc" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="44" uid="6619cac03cb4476f89a58827132f7b65" name="Тесты с ограниченными ресурсами" color="#99ffcc" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="47" uid="bd7c3d474cfb4c3caf509ffc10cbca5d" name="Exec: ограничение fs, mount" color="#ff9900" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+        <task id="48" uid="0f238704aaf3403eb6e7865f15374762" name="Exec: ограничение network workspace" color="#ff9900" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Manager-QA" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Test TL" function="Default:1" contacts="" phone=""/>
+        <resource id="2" name="Web TL" function="Default:1" contacts="" phone=""/>
+        <resource id="3" name="Back dev 1" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="4" name="Back dev 2" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="5" name="Back dev 3" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="6" name="Architect+Devops" function="SoftwareDevelopment:8" contacts="" phone=""/>
+        <resource id="7" name="Front dev 1" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="8" name="Front dev 2" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="9" name="Front dev 3" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="10" name="Sys dev 1" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="11" name="Sys dev 2" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="12" name="Sys dev 3" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="13" name="Sys dev 4" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="14" name="Test Analyst 1" function="SoftwareDevelopment:8" contacts="" phone=""/>
+        <resource id="15" name="Test Analyst 2" function="SoftwareDevelopment:8" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="52" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="53" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="6" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="6" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="51" resource-id="7" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="54" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="57" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="58" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="59" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="60" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="8" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="9" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="10" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="29" resource-id="10" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="10" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="10" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="10" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="47" resource-id="10" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="11" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="31" resource-id="11" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="11" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="11" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="48" resource-id="11" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="12" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="12" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="12" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="27" resource-id="12" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="36" resource-id="12" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="38" resource-id="12" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="43" resource-id="12" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="13" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="13" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="13" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="28" resource-id="13" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="13" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="39" resource-id="13" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="44" resource-id="13" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="14" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="14" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="14" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="41" resource-id="14" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="15" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="15" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="35" resource-id="15" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+        <allocation task-id="42" resource-id="15" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
