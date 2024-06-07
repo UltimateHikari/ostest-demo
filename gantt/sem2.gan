@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-09-01" view-index="0" gantt-divider-location="697" resource-divider-location="300" version="3.3.3309" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-09-01" view-index="0" gantt-divider-location="792" resource-divider-location="300" version="3.3.3309" locale="en_US">
     <description/>
-    <view zooming-state="default:10" id="gantt-chart">
+    <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd15" name="Notes" width="20" order="0"/>
-        <field id="tpd3" name="Name" width="313" order="0"/>
-        <field id="tpd12" name="Cost" width="63" order="1"/>
-        <field id="tpd6" name="Duration" width="68" order="2"/>
-        <field id="tpd13" name="Resources" width="252" order="3"/>
+        <field id="tpd3" name="Name" width="456" order="0"/>
+        <field id="tpd12" name="Cost" width="20" order="1"/>
+        <field id="tpd6" name="Duration" width="63" order="2"/>
+        <field id="tpd13" name="Resources" width="237" order="3"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
-        <option id="color.recent"><![CDATA[#ffff99 #0000ff #ff9900 #99ffcc #cc99ff #99ff99]]></option>
+        <option id="color.recent"><![CDATA[#0000ff #ffff99 #ff9900 #99ffcc #cc99ff #99ff99]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -91,7 +91,7 @@
             <depend id="51" type="2" difference="0" hardness="Rubber"/>
             <depend id="53" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="53" uid="aac97617e8e7449b8ce877eac869ac7a" name="Создание редактирование группы" color="#0000ff" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+        <task id="53" uid="aac97617e8e7449b8ce877eac869ac7a" name="Создание и редактирование группы" color="#0000ff" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
             <depend id="51" type="2" difference="0" hardness="Rubber"/>
         </task>
         <task id="51" uid="3ee03904b0c740fb896af1e803a8aa87" name="Интеграция: пользователи" color="#8cb6ce" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
@@ -116,6 +116,81 @@
         </task>
         <task id="60" uid="998607ffa03a43c08a8b2b33be406154" name="Экран групп" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
             <depend id="51" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="64" uid="7950b86ccb1947a4b0b96f4142e18cd5" name="Восстановление пароля" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true"/>
+        <task id="65" uid="ef3a1ec6a8c74cefb0a59521430be10a" name="Имплементация создания теста" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true">
+            <depend id="66" type="2" difference="0" hardness="Rubber"/>
+            <depend id="67" type="2" difference="0" hardness="Rubber"/>
+            <depend id="68" type="2" difference="0" hardness="Rubber"/>
+            <depend id="69" type="2" difference="0" hardness="Rubber"/>
+            <depend id="78" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="66" uid="fa7ee64d9207484584d48edbe34ba2b8" name="Имплементация получения теста" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="67" uid="a3e19aadb8b844a3b3759c4c929fd92f" name="Имплементация поиска тестов по имени" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="69" uid="a2a4951982884587a7f0aba34fba7df7" name="Имплементация удаления тестов" color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="68" uid="f16d53167b554afa863e3b570351c22e" name="Имплементация редактирования тестов" color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="78" uid="d5dd93e581024409b1a2c84cc3d316e0" name="Интеграция: тесты" color="#8cb6ce" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+        <task id="74" uid="ca8ffc44ac0f448897288ba4911463c4" name="Модальное окно создания теста" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="77" uid="f76fbb4ef727450a9a9de7623c12269a" name="Модальное окно просмотра теста" color="#8cb6ce" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="75" uid="46518a985f1f408f867c856d97e58b06" name="Модальное окно редактирования теста" color="#8cb6ce" meeting="false" start="2024-09-30" duration="5" complete="30" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="76" uid="af79b386a9f44a9f91a8602988fccd26" name="Страница просмотра тестов" color="#8cb6ce" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true">
+            <depend id="78" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="70" uid="cc917779e33c477192d1811033e1ca2e" name="Имплементация создания лабораторной" color="#8cb6ce" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true">
+            <depend id="72" type="2" difference="0" hardness="Rubber"/>
+            <depend id="73" type="2" difference="0" hardness="Rubber"/>
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="71" uid="72334d8baa804921b5426ce99f9fbb77" name="Имплементация получения лабораторной" color="#8cb6ce" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="72" uid="c7e762ea5d264e0184c93151e99a1217" name="Имплементация редактирования лабораторной" color="#8cb6ce" meeting="false" start="2024-10-21" duration="5" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="73" uid="de497fd266954ae4ac3f633fa2dad3b1" name="Имплементация удаления лабораторной" color="#8cb6ce" meeting="false" start="2024-10-21" duration="5" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="84" uid="aadc4e52dedd4aaa8c14e0ddbfaec549" name="Интеграция: лабораторные" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true"/>
+        <task id="79" uid="81df09e0491a4a34978b043c0975e4b9" name="Модальное окно создания лабораторной" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="82" uid="155e992175cc41b8bfd459ec9675c7b0" name="Часть модального окна создания/редактирования лабораторной - форма выбора тестов" color="#8cb6ce" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="80" uid="196f9ebd02754bf6be4b6a39670f7a59" name="Страница просмотра лабораторной" color="#8cb6ce" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="81" uid="8691cbfd402f4475ab54127e1eb05bc6" name="Модальное окно редактирования лабораторной" color="#8cb6ce" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="83" uid="d6bb7d07482240fba04de76ccf97efdb" name="Страница просмотра лабораторных" color="#8cb6ce" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="85" uid="84ea07d398364f4aa3d257974669f915" name="Модификация страницы просмотра лабораторных - для студента" color="#8cb6ce" meeting="false" start="2024-10-14" duration="3" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="87" uid="798a8a3002e14a0da907782706b58b91" name="Модификация страницы просмотра лабораторных - для учителя" color="#8cb6ce" meeting="false" start="2024-10-14" duration="3" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="86" uid="dbe0ac5d698a4072a1ad4a11bf6e11a7" name="Модификация страницы просмотра лабораторной - для студента" color="#8cb6ce" meeting="false" start="2024-10-21" duration="3" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
+        </task>
+        <task id="88" uid="e8d1609cd266424c9e19e3a8d02f71b8" name="Модификация страницы просмотра лабораторной - для учителя" color="#8cb6ce" meeting="false" start="2024-10-21" duration="3" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Rubber"/>
         </task>
         <task id="13" uid="cca54003786848bcbc3d88ca6644a528" name="Фаза 2" meeting="true" start="2024-11-29" duration="0" complete="0" expand="true"/>
         <task id="34" uid="1c48b1b3805d48c68219015d49733c17" name="Тесты: доанализ требований 2" color="#8cb6ce" meeting="false" start="2024-10-28" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
@@ -166,6 +241,18 @@
         <allocation task-id="52" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="53" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="51" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="64" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="65" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="66" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="67" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="68" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="69" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="70" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="71" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="72" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="73" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="78" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="84" resource-id="4" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="6" resource-id="6" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="7" resource-id="6" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="17" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
@@ -178,7 +265,22 @@
         <allocation task-id="59" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="60" resource-id="7" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="17" resource-id="8" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="74" resource-id="8" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="77" resource-id="8" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="75" resource-id="8" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="76" resource-id="8" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="78" resource-id="8" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="17" resource-id="9" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="83" resource-id="9" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="81" resource-id="9" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="80" resource-id="9" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="82" resource-id="9" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="79" resource-id="9" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="84" resource-id="9" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="85" resource-id="9" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="87" resource-id="9" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="86" resource-id="9" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="88" resource-id="9" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="15" resource-id="10" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="29" resource-id="10" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="30" resource-id="10" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
