@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="ostest" company="" webLink="" view-date="2024-01-28" view-index="0" gantt-divider-location="671" resource-divider-location="300" version="3.3.3309" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="ostest" company="" webLink="" view-date="2024-01-28" view-index="0" gantt-divider-location="628" resource-divider-location="300" version="3.3.3309" locale="en_US">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
-        <field id="tpd15" name="Notes" width="20" order="0"/>
-        <field id="tpd3" name="Name" width="231" order="0"/>
-        <field id="tpd12" name="Cost" width="84" order="1"/>
-        <field id="tpd6" name="Duration" width="228" order="2"/>
-        <field id="tpd13" name="Resources" width="127" order="3"/>
+        <field id="tpd10" name="ID" width="45" order="0"/>
+        <field id="tpd3" name="Name" width="329" order="1"/>
+        <field id="tpd12" name="Cost" width="69" order="2"/>
+        <field id="tpd6" name="Duration" width="73" order="3"/>
+        <field id="tpd13" name="Resources" width="111" order="4"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#ff0066 #009999]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -39,27 +40,50 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" uid="10e0108a73224817a212f7b580cbe222" name="Описание студенческого проекта" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
-        <task id="1" uid="dfca609be2ed4af4b0e7344fd826fb53" name="Описание студенческого проекта" color="#8cb6ce" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="14.0" cost-calculated="false"/>
-        <task id="2" uid="c422601943cf4b83b8e249353f5ceb25" name="Исследование требований по тестированию" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="21.0" cost-calculated="false"/>
-        <task id="3" uid="29eb8ff54aaa49f49704dbfa68ba872a" name="Исследование требований по тестированию" color="#8cb6ce" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="19.0" cost-calculated="false"/>
-        <task id="5" uid="6a71de2f73f949cfbefb9823149f39ff" name="Рейтинговая система и web-обвязка" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="16.55" cost-calculated="false"/>
-        <task id="6" uid="12f7ff235ffe4483a2620ef55240a388" name="Рейтинговая система и web-обвязка" color="#8cb6ce" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="12.25" cost-calculated="false"/>
-        <task id="7" uid="45b3dc1cb86d4d719abdb93b5473c4a3" name="Проработка архитектуры web-обвязки" meeting="false" start="2024-04-19" duration="6" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false"/>
-        <task id="8" uid="7e058edb546b46cd8c7f8e23f601872b" name="Проработка архитектуры web-обвязки" color="#8cb6ce" meeting="false" start="2024-04-19" duration="6" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false"/>
-        <task id="9" uid="699c73a1b0dd475d866db7bddb3ff4c9" name="Ревизия требований" meeting="false" start="2024-05-03" duration="6" complete="0" expand="true" cost-manual-value="0.66" cost-calculated="false"/>
-        <task id="10" uid="cbfaebc663874527ae39ee830b7e016c" name="Ревизия требований" color="#8cb6ce" meeting="false" start="2024-05-03" duration="6" complete="0" expand="true" cost-manual-value="0.5" cost-calculated="false"/>
-        <task id="11" uid="1dab14e34903467e8b3845dbabf3be68" name="Ревизия требований" color="#8cb6ce" meeting="false" start="2024-05-03" duration="6" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
-        <task id="13" uid="d7782eb942bc4d8dadd6513a00e345f1" name="Дополнение рисков" color="#8cb6ce" meeting="false" start="2024-05-03" duration="6" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="14" uid="22b135e9c4574ed2808b398a0c30d81e" name="Генерация задач из требований" meeting="false" start="2024-05-17" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false"/>
-        <task id="16" uid="71c09b93664242bfa4fcba992145bff2" name="Генерация задач из требований" color="#8cb6ce" meeting="false" start="2024-05-17" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false"/>
-        <task id="17" uid="9ee019aaad2f4cadaddd74e7f0da6d1c" name="Генерация задач из требований" color="#8cb6ce" meeting="false" start="2024-05-17" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="18" uid="7405facbfce344518a05d6b58d3bf4be" name="Оформление Techical Proposal" meeting="false" start="2024-05-24" duration="6" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
-        <task id="19" uid="d62b4cc283884450903e4848f7e45191" name="Оформление Techical Proposal" color="#8cb6ce" meeting="false" start="2024-05-24" duration="6" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
-        <task id="22" uid="f48aaef455524b0a90923a4ad60e6395" name="Оформление Techical Proposal" color="#8cb6ce" meeting="false" start="2024-05-24" duration="6" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
-        <task id="21" uid="76e1ff1662ce4934b084fa5ec5cad3aa" name="Оформление Techical Proposal" color="#8cb6ce" meeting="false" start="2024-05-24" duration="6" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
-        <task id="23" uid="1427d5ab4af14d81a0236c8734c68ea6" name="Оформление Techical Proposal" color="#8cb6ce" meeting="false" start="2024-05-24" duration="6" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="20" uid="41d4c47c1ad5462c9ed8ffc3195575c6" name="Management" meeting="false" start="2024-02-05" duration="85" complete="0" expand="true" cost-manual-value="13.66" cost-calculated="false"/>
+        <task id="23" uid="76618d50b1ca4f3f9598ddcb1240f6f2" name="OSTEST.УИТП" color="#009999" meeting="false" start="2024-02-05" duration="90" complete="0" expand="true">
+            <task id="24" uid="d43cb67e63094912b42fdfc9cc9b8ad1" name="Описание студенческого проекта" color="#8cb6ce" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true">
+                <depend id="28" type="1" difference="0" hardness="Rubber"/>
+                <task id="1" uid="dfca609be2ed4af4b0e7344fd826fb53" name="Описание студенческого проекта" color="#8cb6ce" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="14.0" cost-calculated="false"/>
+                <task id="0" uid="10e0108a73224817a212f7b580cbe222" name="Описание студенческого проекта" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
+            </task>
+            <task id="25" uid="c0c2bd30662b483682efe0b7bf03ed2a" name="Исследование требований по тестированию" color="#8cb6ce" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true">
+                <depend id="28" type="1" difference="0" hardness="Rubber"/>
+                <task id="3" uid="29eb8ff54aaa49f49704dbfa68ba872a" name="Исследование требований по тестированию" color="#8cb6ce" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="19.0" cost-calculated="false"/>
+                <task id="2" uid="c422601943cf4b83b8e249353f5ceb25" name="Исследование требований по тестированию" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="21.0" cost-calculated="false"/>
+            </task>
+            <task id="26" uid="093354238ea64816b694a317e4147fcf" name="Рейтинговая система и web-обвязка" color="#8cb6ce" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true">
+                <depend id="27" type="1" difference="0" hardness="Rubber"/>
+                <depend id="28" type="1" difference="0" hardness="Rubber"/>
+                <task id="6" uid="12f7ff235ffe4483a2620ef55240a388" name="Рейтинговая система и web-обвязка" color="#8cb6ce" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="12.25" cost-calculated="false"/>
+                <task id="5" uid="6a71de2f73f949cfbefb9823149f39ff" name="Рейтинговая система и web-обвязка" meeting="false" start="2024-02-15" duration="65" complete="0" expand="true" cost-manual-value="16.55" cost-calculated="false"/>
+            </task>
+            <task id="27" uid="2d687268569f4afeb824c84e2fbb466a" name="Проработка архитектуры web-обвязки" color="#8cb6ce" meeting="false" start="2024-04-19" duration="6" complete="0" expand="true">
+                <task id="7" uid="45b3dc1cb86d4d719abdb93b5473c4a3" name="Проработка архитектуры web-обвязки" meeting="false" start="2024-04-19" duration="6" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false"/>
+                <task id="8" uid="7e058edb546b46cd8c7f8e23f601872b" name="Проработка архитектуры web-обвязки" color="#8cb6ce" meeting="false" start="2024-04-19" duration="6" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false"/>
+            </task>
+            <task id="28" uid="fdc00615e739463d81d6126181d4cc3b" name="Ревизия требований" color="#8cb6ce" meeting="false" start="2024-05-03" duration="6" complete="0" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+                <task id="11" uid="1dab14e34903467e8b3845dbabf3be68" name="Ревизия требований" color="#8cb6ce" meeting="false" start="2024-05-03" duration="6" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
+                <task id="10" uid="cbfaebc663874527ae39ee830b7e016c" name="Ревизия требований" color="#8cb6ce" meeting="false" start="2024-05-03" duration="6" complete="0" expand="true" cost-manual-value="0.5" cost-calculated="false"/>
+                <task id="9" uid="699c73a1b0dd475d866db7bddb3ff4c9" name="Ревизия требований" meeting="false" start="2024-05-03" duration="6" complete="0" expand="true" cost-manual-value="0.66" cost-calculated="false"/>
+            </task>
+            <task id="13" uid="d7782eb942bc4d8dadd6513a00e345f1" name="Дополнение рисков" color="#ff0066" meeting="false" start="2024-05-03" duration="6" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="29" uid="bbf714de83114730a231a773970a67ff" name="Генерация задач из требований" color="#8cb6ce" meeting="false" start="2024-05-17" duration="5" complete="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+                <task id="14" uid="22b135e9c4574ed2808b398a0c30d81e" name="Генерация задач из требований" meeting="false" start="2024-05-17" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false"/>
+                <task id="16" uid="71c09b93664242bfa4fcba992145bff2" name="Генерация задач из требований" color="#8cb6ce" meeting="false" start="2024-05-17" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+                <task id="17" uid="9ee019aaad2f4cadaddd74e7f0da6d1c" name="Генерация задач из требований" color="#8cb6ce" meeting="false" start="2024-05-17" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+            </task>
+            <task id="30" uid="50f452cd6e8f4555ab0ff031089acd3a" name="Оформление Techical Proposal" color="#8cb6ce" meeting="false" start="2024-05-24" duration="11" complete="0" expand="true">
+                <task id="18" uid="7405facbfce344518a05d6b58d3bf4be" name="Оформление Techical Proposal" meeting="false" start="2024-05-24" duration="11" complete="0" expand="true" cost-manual-value="6.5" cost-calculated="false"/>
+                <task id="19" uid="d62b4cc283884450903e4848f7e45191" name="Оформление Techical Proposal" color="#8cb6ce" meeting="false" start="2024-05-24" duration="11" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
+                <task id="22" uid="f48aaef455524b0a90923a4ad60e6395" name="Оформление Techical Proposal" color="#8cb6ce" meeting="false" start="2024-05-24" duration="11" complete="0" expand="true" cost-manual-value="3.5" cost-calculated="false"/>
+                <task id="21" uid="76e1ff1662ce4934b084fa5ec5cad3aa" name="Оформление Techical Proposal" color="#8cb6ce" meeting="false" start="2024-05-24" duration="11" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
+            </task>
+            <task id="20" uid="41d4c47c1ad5462c9ed8ffc3195575c6" name="Management" color="#ff0066" meeting="false" start="2024-02-05" duration="90" complete="0" expand="true" cost-manual-value="13.66" cost-calculated="false"/>
+        </task>
     </tasks>
     <resources>
         <resource id="0" name="Андрей" function="Default:0" contacts="" phone=""/>
@@ -82,7 +106,6 @@
         <allocation task-id="7" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="10" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="16" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
-        <allocation task-id="23" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="6" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="8" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="11" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
