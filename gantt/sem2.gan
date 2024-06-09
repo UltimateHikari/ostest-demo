@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-09-01" view-index="0" gantt-divider-location="827" resource-divider-location="300" version="3.3.3309" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-09-01" view-index="0" gantt-divider-location="812" resource-divider-location="300" version="3.3.3309" locale="en_US">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd15" name="Notes" width="20" order="0"/>
-        <field id="tpd3" name="Name" width="422" order="0"/>
-        <field id="tpd12" name="Cost" width="65" order="1"/>
-        <field id="tpd6" name="Duration" width="65" order="2"/>
-        <field id="tpd13" name="Resources" width="165" order="3"/>
-        <field id="tpd10" name="ID" width="94" order="4"/>
+        <field id="tpd3" name="Name" width="414" order="0"/>
+        <field id="tpd12" name="Cost" width="64" order="1"/>
+        <field id="tpd6" name="Duration" width="64" order="2"/>
+        <field id="tpd13" name="Resources" width="162" order="3"/>
+        <field id="tpd10" name="ID" width="92" order="4"/>
         <option id="filter.completedTasks" value="false"/>
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
-        <option id="color.recent"><![CDATA[#ff33ff #0000ff #ffff99 #ff9900 #99ffcc #cc99ff #99ff99]]></option>
+        <option id="color.recent"><![CDATA[#009999 #ff33ff #0000ff #ffff99 #ff9900 #99ffcc #cc99ff #99ff99]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -41,209 +41,326 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" uid="32afcd90d2ae4e35bc2960b4353186ee" name="Общее управление" color="#99ff99" meeting="false" start="2024-09-02" duration="85" complete="0" expand="true" cost-manual-value="40.0" cost-calculated="false"/>
-        <task id="18" uid="a488252e25944db4884b83245a9c2050" name="Web: управление" color="#99ff99" meeting="false" start="2024-09-16" duration="75" complete="0" expand="true" cost-manual-value="40.0" cost-calculated="false"/>
-        <task id="19" uid="6df692ab3058460b8a4e753cc1989e0f" name="Тесты: управление" color="#99ff99" meeting="false" start="2024-09-16" duration="75" complete="0" expand="true" cost-manual-value="40.0" cost-calculated="false"/>
-        <task id="129" uid="5febd6b7daf441f48e694ad184a00c08" name="Дополнение спецификации API обвязки и Exec" color="#99ff99" meeting="false" start="2024-09-16" duration="75" complete="0" expand="true" cost-manual-value="30.0" cost-calculated="false"/>
-        <task id="4" uid="a99ea01f8b8c4fe1b7a36b0965961ada" name="Фаза 0: подготовка" meeting="true" start="2024-09-13" duration="0" complete="0" expand="true"/>
-        <task id="1" uid="e1aa39b47b1b47b2b03d58565802ac1b" name="Фронт: инструкции" color="#ffff99" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
-        <task id="3" uid="6ac1978a9cb54ec3a859b14017f33b67" name="Фронт: заготовка" color="#ffff99" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="2" uid="3d96ded7a6af499287c19897bbce37f5" name="Бэк: инструкции" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
-        <task id="5" uid="6b0c07a3b0c245d29ab250ed6f84ca46" name="Бэк: заготовка" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false"/>
-        <task id="6" uid="bb56a126cb74486eb2e8e235fb140664" name="Схема данных" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="7" uid="48ce371adc5845edbbd3d1615e113571" name="Описание API обвязки" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="8" uid="10872d5bba1847ae9808536b5a3d80f9" name="Exec: демо" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false"/>
-        <task id="9" uid="0d2105efb56c4346b2f0946c56f71071" name="Exec: инструкции" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
-        <task id="10" uid="3019422acb0a43a1aba041b59353a7a6" name="Тесты: заготовка" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="118" uid="c274f00fa94249cfbd57633eefd880ef" name="Описание API Exec" color="#8cb6ce" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="12.0" cost-calculated="false"/>
-        <task id="11" uid="01ece70c84af43248a1cc345cf9a2fe6" name="Фаза 1" meeting="true" start="2024-10-25" duration="0" complete="0" expand="true"/>
-        <task id="21" uid="494931cde02b4de6a0c50257cb98eec2" name="Тесты: доанализ требований" meeting="false" start="2024-09-16" duration="25" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
-        <task id="22" uid="6bf4df2a802a4eeab23e35d9248c34db" name="Web: доанализ требований" meeting="false" start="2024-09-16" duration="25" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
-        <task id="119" uid="50350cc02b274063b41ea43ba896aa11" name="Разработка тестовой методологии" color="#ff33ff" meeting="false" start="2024-09-16" duration="15" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
-        <task id="120" uid="16272cf868b44e71a64042f94edf88ca" name="Изучение требований, терминологии, тестирования" color="#ff33ff" meeting="false" start="2024-09-16" duration="15" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false"/>
-        <task id="121" uid="34499ca9d44c47a79c364cdb7b3bf1de" name="QA тестов 1" color="#ff33ff" meeting="false" start="2024-10-07" duration="10" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
-        <task id="16" uid="67b082a237c1484dbac6b2b69dd12919" name="Тесты: обучение" color="#cc99ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
-            <depend id="23" type="2" difference="0" hardness="Strong"/>
-            <depend id="24" type="2" difference="0" hardness="Strong"/>
+        <task id="130" uid="36964281c5184b6c834953e0477e617d" name="OSTEST.ПУИТП" color="#009999" meeting="false" start="2024-09-02" duration="85" complete="0" expand="true">
+            <task id="0" uid="32afcd90d2ae4e35bc2960b4353186ee" name="Общее управление" color="#99ff99" meeting="false" start="2024-09-02" duration="85" complete="0" expand="true" cost-manual-value="40.0" cost-calculated="false"/>
+            <task id="18" uid="a488252e25944db4884b83245a9c2050" name="Web: управление" color="#99ff99" meeting="false" start="2024-09-16" duration="75" complete="0" expand="true" cost-manual-value="40.0" cost-calculated="false"/>
+            <task id="19" uid="6df692ab3058460b8a4e753cc1989e0f" name="Тесты: управление" color="#99ff99" meeting="false" start="2024-09-16" duration="75" complete="0" expand="true" cost-manual-value="40.0" cost-calculated="false"/>
+            <task id="129" uid="5febd6b7daf441f48e694ad184a00c08" name="Дополнение спецификации API обвязки и Exec" color="#99ff99" meeting="false" start="2024-09-16" duration="75" complete="0" expand="true" cost-manual-value="30.0" cost-calculated="false"/>
+            <task id="133" uid="abd377f14fa44741b8539fee150ac885" name="Фаза 0 - подготовка" color="#009999" meeting="false" start="2024-09-02" duration="10" complete="0" expand="false">
+                <depend id="4" type="2" difference="0" hardness="Rubber"/>
+                <depend id="18" type="2" difference="0" hardness="Rubber"/>
+                <depend id="19" type="2" difference="0" hardness="Rubber"/>
+                <depend id="132" type="2" difference="0" hardness="Rubber"/>
+                <task id="1" uid="e1aa39b47b1b47b2b03d58565802ac1b" name="Фронт: инструкции" color="#ffff99" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
+                <task id="3" uid="6ac1978a9cb54ec3a859b14017f33b67" name="Фронт: заготовка" color="#ffff99" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+                <task id="2" uid="3d96ded7a6af499287c19897bbce37f5" name="Бэк: инструкции" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
+                <task id="5" uid="6b0c07a3b0c245d29ab250ed6f84ca46" name="Бэк: заготовка" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false"/>
+                <task id="6" uid="bb56a126cb74486eb2e8e235fb140664" name="Схема данных" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+                <task id="7" uid="48ce371adc5845edbbd3d1615e113571" name="Описание API обвязки" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false">
+                    <depend id="129" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="8" uid="10872d5bba1847ae9808536b5a3d80f9" name="Exec: демо" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false"/>
+                <task id="9" uid="0d2105efb56c4346b2f0946c56f71071" name="Exec: инструкции" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false"/>
+                <task id="10" uid="3019422acb0a43a1aba041b59353a7a6" name="Тесты: заготовка" meeting="false" start="2024-09-02" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
+                <task id="118" uid="c274f00fa94249cfbd57633eefd880ef" name="Описание API Exec" color="#8cb6ce" meeting="false" start="2024-09-09" duration="5" complete="0" expand="true" cost-manual-value="12.0" cost-calculated="false">
+                    <depend id="129" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="4" uid="a99ea01f8b8c4fe1b7a36b0965961ada" name="Фаза 0 - дедлайн" meeting="true" start="2024-09-16" duration="0" complete="0" expand="true"/>
+            <task id="132" uid="318e1260473a4d80810c89be94c1880d" name="Фаза 1" color="#009999" meeting="false" start="2024-09-16" duration="25" complete="0" expand="false">
+                <depend id="11" type="2" difference="0" hardness="Rubber"/>
+                <depend id="131" type="2" difference="0" hardness="Rubber"/>
+                <task id="21" uid="494931cde02b4de6a0c50257cb98eec2" name="Тесты: доанализ требований" meeting="false" start="2024-09-16" duration="25" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
+                <task id="22" uid="6bf4df2a802a4eeab23e35d9248c34db" name="Web: доанализ требований" meeting="false" start="2024-09-16" duration="25" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
+                <task id="119" uid="50350cc02b274063b41ea43ba896aa11" name="Разработка тестовой методологии" color="#ff33ff" meeting="false" start="2024-09-16" duration="15" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false">
+                    <depend id="121" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="120" uid="16272cf868b44e71a64042f94edf88ca" name="Изучение требований, терминологии, тестирования" color="#ff33ff" meeting="false" start="2024-09-16" duration="15" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false">
+                    <depend id="121" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="121" uid="34499ca9d44c47a79c364cdb7b3bf1de" name="QA тестов 1" color="#ff33ff" meeting="false" start="2024-10-07" duration="10" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
+                <task id="16" uid="67b082a237c1484dbac6b2b69dd12919" name="Тесты: обучение" color="#cc99ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+                    <depend id="23" type="2" difference="0" hardness="Strong"/>
+                    <depend id="24" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="23" uid="67f8145ba19d4b2fbe3cac7bc39cf597" name="Тесты исполняемого файла" color="#99ffcc" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="24" uid="7fc8d19313a84daa9a1d0acf98289c04" name="Тесты модуля конфигурации" color="#99ffcc" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="25" uid="b535343ceacc40a6ad4392cf5151abda" name="Тесты cli" color="#99ffcc" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="26" uid="97878f96f69947dfa090e9e99143ecde" name="Тесты логгера" color="#99ffcc" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="27" uid="15fba01258b04b6a9b0c62ac13b53af4" name="Тесты IPC" color="#99ffcc" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="28" uid="e1825f9fff964aa0bcd3920c524775ab" name="Тесты корректности кэша" color="#99ffcc" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="126" uid="321175a5f38c4477a6e17dcae529e4c2" name="Интеграция: базовые тесты" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="16.0" cost-calculated="false"/>
+                <task id="15" uid="5aaf995662ae4d70bb7ab91d058eb6bb" name="Exec: обучение" color="#cc99ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+                    <depend id="29" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="29" uid="619303c65c5a432089acd7f3797a7d8e" name="Exec: запуск бинарника" color="#ff9900" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+                    <depend id="30" type="2" difference="0" hardness="Strong"/>
+                    <depend id="31" type="2" difference="0" hardness="Strong"/>
+                    <depend id="32" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="33" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="30" uid="988de18a76ed43fd894df39eef545d7e" name="Exec: получение stdin" color="#ff9900" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="31" uid="a956de4e9721406095a91d1f68975a90" name="Exec: получение сокета" color="#ff9900" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="32" uid="17ad0711d48444e2b87f178d00035b50" name="Exec: получение вывода" color="#ff9900" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="33" uid="caf625a816874a62b0d93c38b5dc79a7" name="Exec: получение статистик /proc" color="#ff9900" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="126" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="17" uid="ccea6896d2cb498caf6fb6d78d1792d7" name="Фронт: обучение" color="#cc99ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false">
+                    <depend id="54" type="2" difference="0" hardness="Strong"/>
+                    <depend id="55" type="2" difference="0" hardness="Strong"/>
+                    <depend id="56" type="2" difference="0" hardness="Strong"/>
+                    <depend id="74" type="2" difference="0" hardness="Strong"/>
+                    <depend id="79" type="2" difference="0" hardness="Strong"/>
+                    <depend id="81" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="49" uid="507f768b047b4e689a3476378148c673" name="Авторизация пользователя" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+                    <depend id="50" type="2" difference="0" hardness="Strong"/>
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="50" uid="7d1f435cc6ec42349788e9acb9b51928" name="Изменение пароля" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="52" uid="8857c55f63224c1186bddac8162ed1fe" name="Получение групп для пользователя.." color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="53" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="53" uid="aac97617e8e7449b8ce877eac869ac7a" name="Создание и редактирование группы" color="#0000ff" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="51" uid="3ee03904b0c740fb896af1e803a8aa87" name="Интеграция: пользователи" color="#8cb6ce" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="54" uid="e3d7d30118af427997d0dabaf757b28d" name="Восстановление пароля" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="56" uid="8d9ea406c3aa4165993e90524fab4317" name="Welcome страница" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="55" uid="19da76ef174c4c939b0efccbebe70f06" name="Страница входа" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="58" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="57" uid="eb7a1fc2ffa64e3ead47045888366589" name="Навигация в шапке" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="58" uid="aeb02307a33a4547941eec5495aa6290" name="Личный кабинет" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="59" uid="44c7d3cd95104aa5a32868c6d46fe527" name="Создание редактирование группы" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="60" uid="998607ffa03a43c08a8b2b33be406154" name="Экран групп" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="51" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="64" uid="7950b86ccb1947a4b0b96f4142e18cd5" name="Восстановление пароля" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="78" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="65" uid="ef3a1ec6a8c74cefb0a59521430be10a" name="Имплементация создания теста" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="66" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="67" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="68" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="69" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="66" uid="fa7ee64d9207484584d48edbe34ba2b8" name="Имплементация получения теста" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="67" uid="a3e19aadb8b844a3b3759c4c929fd92f" name="Имплементация поиска тестов по имени" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="82" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="69" uid="a2a4951982884587a7f0aba34fba7df7" name="Имплементация удаления тестов" color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="68" uid="f16d53167b554afa863e3b570351c22e" name="Имплементация редактирования тестов" color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="78" uid="d5dd93e581024409b1a2c84cc3d316e0" name="Интеграция: тесты" color="#8cb6ce" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="74" uid="ca8ffc44ac0f448897288ba4911463c4" name="Модальное окно создания теста" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false">
+                    <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="77" uid="f76fbb4ef727450a9a9de7623c12269a" name="Модальное окно просмотра теста" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="75" uid="46518a985f1f408f867c856d97e58b06" name="Модальное окно редактирования теста" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="30" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="76" uid="af79b386a9f44a9f91a8602988fccd26" name="Страница просмотра тестов" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="78" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="70" uid="cc917779e33c477192d1811033e1ca2e" name="Имплементация создания лабораторной" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="72" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="73" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="84" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="71" uid="72334d8baa804921b5426ce99f9fbb77" name="Имплементация получения лабораторной" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="84" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="72" uid="c7e762ea5d264e0184c93151e99a1217" name="Имплементация редактирования лабораторной" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="84" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="73" uid="de497fd266954ae4ac3f633fa2dad3b1" name="Имплементация удаления лабораторной" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="84" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="89" uid="637281b9d7a54577b3a5fc41bfdc0e6f" name="Получение попыток сдачи" color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="90" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="84" uid="aadc4e52dedd4aaa8c14e0ddbfaec549" name="Интеграция: лабораторные" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="79" uid="81df09e0491a4a34978b043c0975e4b9" name="Модальное окно создания лабораторной" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="82" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="84" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="81" uid="8691cbfd402f4475ab54127e1eb05bc6" name="Модальное окно редактирования лабораторной" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="82" type="2" difference="0" hardness="Rubber"/>
+                    <depend id="84" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="80" uid="196f9ebd02754bf6be4b6a39670f7a59" name="Страница просмотра лабораторной" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false">
+                    <depend id="84" type="2" difference="0" hardness="Rubber"/>
+                </task>
+                <task id="83" uid="d6bb7d07482240fba04de76ccf97efdb" name="Страница просмотра лабораторных" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false">
+                    <depend id="84" type="2" difference="0" hardness="Rubber"/>
+                </task>
+            </task>
+            <task id="11" uid="01ece70c84af43248a1cc345cf9a2fe6" name="Фаза 1 - дедлайн" meeting="true" start="2024-10-28" duration="0" complete="0" expand="true"/>
+            <task id="131" uid="dad9ce2dc883493caa00bede366eda2f" name="Фаза 2" color="#009999" meeting="false" start="2024-10-28" duration="20" complete="0" expand="false">
+                <depend id="13" type="2" difference="0" hardness="Rubber"/>
+                <depend id="41" type="2" difference="0" hardness="Rubber"/>
+                <task id="34" uid="1c48b1b3805d48c68219015d49733c17" name="Тесты: доанализ требований 2" color="#8cb6ce" meeting="false" start="2024-10-28" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="35" uid="4bc5204429e34df49cf226e6cd3502b5" name="Web: доанализ требований 2" color="#8cb6ce" meeting="false" start="2024-10-28" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="122" uid="ed483eb1911b430789f311863140c7a8" name="QA обвязки 1" color="#ff33ff" meeting="false" start="2024-10-28" duration="10" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false"/>
+                <task id="123" uid="d46454c1640e4f2f97d291c41a87750a" name="QA тестов 2" color="#ff33ff" meeting="false" start="2024-11-11" duration="10" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false"/>
+                <task id="36" uid="3b0cd6bd49854b8f83beacdad2c957a3" name="Тесты многозадачности" color="#99ffcc" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="37" uid="3de85d8afdaf4954a32e246603198d4b" name="Тесты сети" color="#99ffcc" meeting="false" start="2024-10-28" duration="10" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="38" uid="34b70e53c150488ab0a8361d712477d3" name="Тесты кэша" color="#99ffcc" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="39" uid="39bcda48456548a3a4dfbecca26c2720" name="Нагрузочные тесты" color="#99ffcc" meeting="false" start="2024-11-04" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="127" uid="295f5df94dc9402b9336aefa3eb88da8" name="Интеграция: нагрузочные тесты" color="#8cb6ce" meeting="false" start="2024-11-18" duration="5" complete="0" expand="true" cost-manual-value="16.0" cost-calculated="false"/>
+                <task id="45" uid="a47c0a4bc6f84615ba7d097f03e3def2" name="Exec: жесткие ограничения cgroup 1" color="#ff9900" meeting="false" start="2024-10-28" duration="15" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="46" uid="acbd3dc61263422ea8db92172a446331" name="Exec: жесткие ограничения cgroup 2" color="#ff9900" meeting="false" start="2024-10-28" duration="15" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false">
+                    <depend id="127" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="82" uid="155e992175cc41b8bfd459ec9675c7b0" name="Часть модального окна создания/редактирования лабораторной - форма выбора тестов" color="#ffff99" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
+                    <depend id="91" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="90" uid="a08e6ccf9eae4c189deaf8c649a5635e" name="Страница просмотра попыток сдачи" color="#ffff99" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="91" type="2" difference="0" hardness="Strong"/>
+                    <depend id="95" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="95" uid="c481874a71d241fd88db4e45b880aef4" name="Модальное окно загрузки лабораторных" color="#ffff99" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="91" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="91" uid="b081f717b4304e749cf8ddf8c5b1456e" name="Интеграция попыток сдачи" meeting="false" start="2024-11-18" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="92" uid="fd8514585d50417cab59147e6155674a" name="Проверка лабораторной в новой попытке сдачи" color="#0000ff" meeting="false" start="2024-10-28" duration="10" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false">
+                    <depend id="91" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="96" uid="c3368ee551574094adbd02f853752b8b" name="Создание сессий сдачи" color="#0000ff" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="99" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="98" uid="f318687a843c4116ab47ea6b8d5fbaba" name="Получение сессий сдачи" color="#0000ff" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="99" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="97" uid="005b669213854580b31a3ac5f33c4c9c" name="Поиск и фильтрация сессий сдачи" color="#0000ff" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="99" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="99" uid="1d258490b160442cacd0a87e8f08f3d8" name="Интеграция сессий сдачи" color="#8cb6ce" meeting="false" start="2024-11-18" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="100" uid="8375725d2b2449ffa359eb3a21b5ca47" name="Просмотр сессий сдачи" color="#ffff99" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="99" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="102" uid="6d7ed9926fa64a8da6fba12f2bfa9503" name="Просмотр сессий сдачи студентов с поиском" color="#ffff99" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="99" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="94" uid="7b88267d784e44a4b91a6065278e3efc" name="Модификация страницы просмотра сессии сдачи - для преподавателя" color="#ffff99" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false">
+                    <depend id="99" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="103" uid="05861e5093a44d0898381458dfabca26" name="Личная информация по всем пользователям" color="#0000ff" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="107" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="105" uid="eb50a915321143008391f5a3580872d3" name="Личная информация пользователя" color="#0000ff" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="107" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="104" uid="17c589b781274df18b607de4818eb5ea" name="Создание/редактирование пользователя" color="#0000ff" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="107" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="106" uid="0199ca405d43401e879192abf0260c7d" name="Создание множества пользователей" color="#0000ff" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="107" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="107" uid="c244a90f742e4837a88e6d91f0b12568" name="Интеграция пользователей" color="#8cb6ce" meeting="false" start="2024-11-18" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="109" uid="8fd2ab621b7f46188109221ec864de48" name="Модалки создания редактирования пользователя" color="#ffff99" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="107" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="110" uid="bb44a77fa24f4490bf8f10560ca2cad3" name="Экран всех пользователей для админа" color="#ffff99" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="107" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="108" uid="831c9b5d9b0f4e6684876ea9780350b6" name="Переход на экран группы" color="#ffff99" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
+                    <depend id="107" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="13" uid="cca54003786848bcbc3d88ca6644a528" name="Фаза 2 - дедлайн" meeting="true" start="2024-12-02" duration="0" complete="0" expand="true"/>
+            <task id="41" uid="8ba225a1c418429f89d85a7ce12923f6" name="Фаза 3" color="#009999" meeting="false" start="2024-12-02" duration="20" complete="0" expand="false">
+                <depend id="14" type="3" difference="0" hardness="Strong"/>
+                <task id="42" uid="c6a4088b00ef41d1bc9c694d8edf035d" name="Web: доанализ требований 3" color="#8cb6ce" meeting="false" start="2024-12-02" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="124" uid="1d890ba4b77c40cc9a2794141e7bde62" name="QA обвязки 2" color="#ff33ff" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false"/>
+                <task id="125" uid="652f3ca9617749e6a811ce0ce3a0541d" name="Общее QA" color="#ff33ff" meeting="false" start="2024-12-16" duration="10" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false"/>
+                <task id="85" uid="84ea07d398364f4aa3d257974669f915" name="Модификация страницы просмотра лабораторных - для студента" color="#ffff99" meeting="false" start="2024-12-02" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
+                <task id="87" uid="798a8a3002e14a0da907782706b58b91" name="Модификация страницы просмотра лабораторных - для учителя" color="#ffff99" meeting="false" start="2024-12-02" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
+                <task id="86" uid="dbe0ac5d698a4072a1ad4a11bf6e11a7" name="Модификация страницы просмотра лабораторной - для студента" color="#ffff99" meeting="false" start="2024-12-09" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
+                <task id="88" uid="e8d1609cd266424c9e19e3a8d02f71b8" name="Модификация страницы просмотра лабораторной - для учителя" color="#ffff99" meeting="false" start="2024-12-09" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
+                <task id="93" uid="34e3c4c86b08488c8661689ce9358d18" name="Модификация страницы просмотра попытки сдачи - для преподавателя" color="#ffff99" meeting="false" start="2024-12-16" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
+                <task id="115" uid="4c7fa5b6046b4a5d8ccf83a84890c1e5" name="Переход к лабораторной по студенту" color="#ffff99" meeting="false" start="2024-12-02" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
+                <task id="116" uid="f38ef31891cb474eb1b8c963633282dd" name="Фронт: исправление багов" color="#ffff99" meeting="false" start="2024-12-02" duration="20" complete="0" expand="true" cost-manual-value="20.0" cost-calculated="false"/>
+                <task id="117" uid="e1d725603db44e839308b301e03f712d" name="Бэк: исправление багов" color="#0000ff" meeting="false" start="2024-12-02" duration="20" complete="0" expand="true" cost-manual-value="20.0" cost-calculated="false"/>
+                <task id="111" uid="2fdb7386f0b5440393ba1c20e311a8e4" name="Данные для рейтинговой таблицы" color="#0000ff" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false">
+                    <depend id="113" type="2" difference="0" hardness="Strong"/>
+                    <depend id="114" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="113" uid="5baaf7afd794471db0df51ec0faa53ac" name="Интеграция рейтинговой таблицы" meeting="false" start="2024-12-23" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
+                <task id="112" uid="5b911710cfda4775baf301bfe0517865" name="Рейтинговая таблица" color="#ffff99" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false">
+                    <depend id="113" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="114" uid="17404c1da305462ba2d99ef56721f858" name="Сортировки по срезу" color="#ffff99" meeting="false" start="2024-12-16" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false">
+                    <depend id="113" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="43" uid="ef3d5f5f88e842b39ba4dfe6bdbedc15" name="Тесты под valgrind и санитайзерами" color="#99ffcc" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false">
+                    <depend id="128" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="44" uid="6619cac03cb4476f89a58827132f7b65" name="Тесты с ограниченными ресурсами" color="#99ffcc" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false">
+                    <depend id="128" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="128" uid="2cb75baaa8bd482d9ead1ad4b5ee2a67" name="Интеграция: дополнительные тесты" color="#8cb6ce" meeting="false" start="2024-12-16" duration="5" complete="0" expand="true" cost-manual-value="16.0" cost-calculated="false"/>
+                <task id="47" uid="bd7c3d474cfb4c3caf509ffc10cbca5d" name="Exec: ограничение fs, mount" color="#ff9900" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false">
+                    <depend id="128" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="48" uid="0f238704aaf3403eb6e7865f15374762" name="Exec: ограничение network workspace" color="#ff9900" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false">
+                    <depend id="128" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="14" uid="1591ccfc3d404e74b45767d82c3cb02d" name="Фаза 3-дедлайн" meeting="true" start="2024-12-30" duration="0" complete="0" expand="true"/>
         </task>
-        <task id="23" uid="67f8145ba19d4b2fbe3cac7bc39cf597" name="Тесты исполняемого файла" color="#99ffcc" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="24" uid="7fc8d19313a84daa9a1d0acf98289c04" name="Тесты модуля конфигурации" color="#99ffcc" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="25" uid="b535343ceacc40a6ad4392cf5151abda" name="Тесты cli" color="#99ffcc" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="26" uid="97878f96f69947dfa090e9e99143ecde" name="Тесты логгера" color="#99ffcc" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="27" uid="15fba01258b04b6a9b0c62ac13b53af4" name="Тесты IPC" color="#99ffcc" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="28" uid="e1825f9fff964aa0bcd3920c524775ab" name="Тесты корректности кэша" color="#99ffcc" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="126" uid="321175a5f38c4477a6e17dcae529e4c2" name="Интеграция: базовые тесты" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="16.0" cost-calculated="false"/>
-        <task id="15" uid="5aaf995662ae4d70bb7ab91d058eb6bb" name="Exec: обучение" color="#cc99ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
-            <depend id="29" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="29" uid="619303c65c5a432089acd7f3797a7d8e" name="Exec: запуск бинарника" color="#ff9900" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
-            <depend id="30" type="2" difference="0" hardness="Strong"/>
-            <depend id="31" type="2" difference="0" hardness="Strong"/>
-            <depend id="32" type="2" difference="0" hardness="Rubber"/>
-            <depend id="33" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="30" uid="988de18a76ed43fd894df39eef545d7e" name="Exec: получение stdin" color="#ff9900" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="31" uid="a956de4e9721406095a91d1f68975a90" name="Exec: получение сокета" color="#ff9900" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="32" uid="17ad0711d48444e2b87f178d00035b50" name="Exec: получение вывода" color="#ff9900" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="33" uid="caf625a816874a62b0d93c38b5dc79a7" name="Exec: получение статистик /proc" color="#ff9900" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="17" uid="ccea6896d2cb498caf6fb6d78d1792d7" name="Фронт: обучение" color="#cc99ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="49" uid="507f768b047b4e689a3476378148c673" name="Авторизация пользователя" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
-            <depend id="50" type="2" difference="0" hardness="Strong"/>
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="50" uid="7d1f435cc6ec42349788e9acb9b51928" name="Изменение пароля" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="4.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="52" uid="8857c55f63224c1186bddac8162ed1fe" name="Получение групп для пользователя.." color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-            <depend id="53" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="53" uid="aac97617e8e7449b8ce877eac869ac7a" name="Создание и редактирование группы" color="#0000ff" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="51" uid="3ee03904b0c740fb896af1e803a8aa87" name="Интеграция: пользователи" color="#8cb6ce" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="54" uid="e3d7d30118af427997d0dabaf757b28d" name="Восстановление пароля" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="56" uid="8d9ea406c3aa4165993e90524fab4317" name="Welcome страница" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="55" uid="19da76ef174c4c939b0efccbebe70f06" name="Страница входа" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-            <depend id="58" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="57" uid="eb7a1fc2ffa64e3ead47045888366589" name="Навигация в шапке" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="58" uid="aeb02307a33a4547941eec5495aa6290" name="Личный кабинет" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="59" uid="44c7d3cd95104aa5a32868c6d46fe527" name="Создание редактирование группы" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="60" uid="998607ffa03a43c08a8b2b33be406154" name="Экран групп" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="51" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="64" uid="7950b86ccb1947a4b0b96f4142e18cd5" name="Восстановление пароля" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false"/>
-        <task id="65" uid="ef3a1ec6a8c74cefb0a59521430be10a" name="Имплементация создания теста" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="66" type="2" difference="0" hardness="Rubber"/>
-            <depend id="67" type="2" difference="0" hardness="Rubber"/>
-            <depend id="68" type="2" difference="0" hardness="Rubber"/>
-            <depend id="69" type="2" difference="0" hardness="Rubber"/>
-            <depend id="78" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="66" uid="fa7ee64d9207484584d48edbe34ba2b8" name="Имплементация получения теста" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="78" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="67" uid="a3e19aadb8b844a3b3759c4c929fd92f" name="Имплементация поиска тестов по имени" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="78" type="2" difference="0" hardness="Rubber"/>
-            <depend id="82" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="69" uid="a2a4951982884587a7f0aba34fba7df7" name="Имплементация удаления тестов" color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="78" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="68" uid="f16d53167b554afa863e3b570351c22e" name="Имплементация редактирования тестов" color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="78" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="78" uid="d5dd93e581024409b1a2c84cc3d316e0" name="Интеграция: тесты" color="#8cb6ce" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="74" uid="ca8ffc44ac0f448897288ba4911463c4" name="Модальное окно создания теста" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false">
-            <depend id="78" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="77" uid="f76fbb4ef727450a9a9de7623c12269a" name="Модальное окно просмотра теста" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="78" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="75" uid="46518a985f1f408f867c856d97e58b06" name="Модальное окно редактирования теста" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="30" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="78" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="76" uid="af79b386a9f44a9f91a8602988fccd26" name="Страница просмотра тестов" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="78" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="70" uid="cc917779e33c477192d1811033e1ca2e" name="Имплементация создания лабораторной" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="72" type="2" difference="0" hardness="Rubber"/>
-            <depend id="73" type="2" difference="0" hardness="Rubber"/>
-            <depend id="84" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="71" uid="72334d8baa804921b5426ce99f9fbb77" name="Имплементация получения лабораторной" color="#0000ff" meeting="false" start="2024-09-16" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="84" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="72" uid="c7e762ea5d264e0184c93151e99a1217" name="Имплементация редактирования лабораторной" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="84" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="73" uid="de497fd266954ae4ac3f633fa2dad3b1" name="Имплементация удаления лабораторной" color="#0000ff" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="84" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="89" uid="637281b9d7a54577b3a5fc41bfdc0e6f" name="Получение попыток сдачи" color="#0000ff" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="90" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="84" uid="aadc4e52dedd4aaa8c14e0ddbfaec549" name="Интеграция: лабораторные" meeting="false" start="2024-10-14" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="79" uid="81df09e0491a4a34978b043c0975e4b9" name="Модальное окно создания лабораторной" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false">
-            <depend id="82" type="2" difference="0" hardness="Rubber"/>
-            <depend id="84" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="81" uid="8691cbfd402f4475ab54127e1eb05bc6" name="Модальное окно редактирования лабораторной" color="#ffff99" meeting="false" start="2024-09-23" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false">
-            <depend id="82" type="2" difference="0" hardness="Rubber"/>
-            <depend id="84" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="80" uid="196f9ebd02754bf6be4b6a39670f7a59" name="Страница просмотра лабораторной" color="#ffff99" meeting="false" start="2024-09-30" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false">
-            <depend id="84" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="83" uid="d6bb7d07482240fba04de76ccf97efdb" name="Страница просмотра лабораторных" color="#ffff99" meeting="false" start="2024-10-07" duration="5" complete="0" expand="true" cost-manual-value="3.0" cost-calculated="false">
-            <depend id="84" type="2" difference="0" hardness="Rubber"/>
-        </task>
-        <task id="13" uid="cca54003786848bcbc3d88ca6644a528" name="Фаза 2" meeting="true" start="2024-11-29" duration="0" complete="0" expand="true"/>
-        <task id="34" uid="1c48b1b3805d48c68219015d49733c17" name="Тесты: доанализ требований 2" color="#8cb6ce" meeting="false" start="2024-10-28" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="35" uid="4bc5204429e34df49cf226e6cd3502b5" name="Web: доанализ требований 2" color="#8cb6ce" meeting="false" start="2024-10-28" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="122" uid="ed483eb1911b430789f311863140c7a8" name="QA обвязки 1" color="#ff33ff" meeting="false" start="2024-10-28" duration="10" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false"/>
-        <task id="123" uid="d46454c1640e4f2f97d291c41a87750a" name="QA тестов 2" color="#ff33ff" meeting="false" start="2024-11-11" duration="10" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false"/>
-        <task id="36" uid="3b0cd6bd49854b8f83beacdad2c957a3" name="Тесты многозадачности" color="#99ffcc" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="37" uid="3de85d8afdaf4954a32e246603198d4b" name="Тесты сети" color="#99ffcc" meeting="false" start="2024-10-28" duration="10" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="38" uid="34b70e53c150488ab0a8361d712477d3" name="Тесты кэша" color="#99ffcc" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="39" uid="39bcda48456548a3a4dfbecca26c2720" name="Нагрузочные тесты" color="#99ffcc" meeting="false" start="2024-11-04" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="127" uid="295f5df94dc9402b9336aefa3eb88da8" name="Интеграция: нагрузочные тесты" color="#8cb6ce" meeting="false" start="2024-11-18" duration="5" complete="0" expand="true" cost-manual-value="16.0" cost-calculated="false"/>
-        <task id="45" uid="a47c0a4bc6f84615ba7d097f03e3def2" name="Exec: жесткие ограничения cgroup 1" color="#ff9900" meeting="false" start="2024-10-28" duration="15" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="46" uid="acbd3dc61263422ea8db92172a446331" name="Exec: жесткие ограничения cgroup 2" color="#ff9900" meeting="false" start="2024-10-28" duration="15" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="82" uid="155e992175cc41b8bfd459ec9675c7b0" name="Часть модального окна создания/редактирования лабораторной - форма выбора тестов" color="#ffff99" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="1.0" cost-calculated="false"/>
-        <task id="90" uid="a08e6ccf9eae4c189deaf8c649a5635e" name="Страница просмотра попыток сдачи" color="#ffff99" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="95" uid="c481874a71d241fd88db4e45b880aef4" name="Модальное окно загрузки лабораторных" color="#ffff99" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="91" uid="b081f717b4304e749cf8ddf8c5b1456e" name="Интеграция попыток сдачи" meeting="false" start="2024-11-18" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="92" uid="fd8514585d50417cab59147e6155674a" name="Проверка лабораторной в новой попытке сдачи" color="#0000ff" meeting="false" start="2024-10-28" duration="10" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="96" uid="c3368ee551574094adbd02f853752b8b" name="Создание сессий сдачи" color="#0000ff" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="98" uid="f318687a843c4116ab47ea6b8d5fbaba" name="Получение сессий сдачи" color="#0000ff" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="97" uid="005b669213854580b31a3ac5f33c4c9c" name="Поиск и фильтрация сессий сдачи" color="#0000ff" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="99" uid="1d258490b160442cacd0a87e8f08f3d8" name="Интеграция сессий сдачи" color="#8cb6ce" meeting="false" start="2024-11-18" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="100" uid="8375725d2b2449ffa359eb3a21b5ca47" name="Просмотр сессий сдачи" color="#ffff99" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="102" uid="6d7ed9926fa64a8da6fba12f2bfa9503" name="Просмотр сессий сдачи студентов с поиском" color="#ffff99" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="94" uid="7b88267d784e44a4b91a6065278e3efc" name="Модификация страницы просмотра сессии сдачи - для преподавателя" color="#ffff99" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
-        <task id="103" uid="05861e5093a44d0898381458dfabca26" name="Личная информация по всем пользователям" color="#0000ff" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="105" uid="eb50a915321143008391f5a3580872d3" name="Личная информация пользователя" color="#0000ff" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="104" uid="17c589b781274df18b607de4818eb5ea" name="Создание/редактирование пользователя" color="#0000ff" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="106" uid="0199ca405d43401e879192abf0260c7d" name="Создание множества пользователей" color="#0000ff" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="107" uid="c244a90f742e4837a88e6d91f0b12568" name="Интеграция пользователей" color="#8cb6ce" meeting="false" start="2024-11-18" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="109" uid="8fd2ab621b7f46188109221ec864de48" name="Модалки создания редактирования пользователя" color="#ffff99" meeting="false" start="2024-10-28" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="110" uid="bb44a77fa24f4490bf8f10560ca2cad3" name="Экран всех пользователей для админа" color="#ffff99" meeting="false" start="2024-11-04" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="108" uid="831c9b5d9b0f4e6684876ea9780350b6" name="Переход на экран группы" color="#ffff99" meeting="false" start="2024-11-11" duration="5" complete="0" expand="true" cost-manual-value="2.0" cost-calculated="false"/>
-        <task id="14" uid="1591ccfc3d404e74b45767d82c3cb02d" name="Фаза 3" meeting="true" start="2024-12-27" duration="0" complete="0" expand="true"/>
-        <task id="41" uid="8ba225a1c418429f89d85a7ce12923f6" name="Тесты: доанализ требований 3" color="#8cb6ce" meeting="false" start="2024-12-02" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="42" uid="c6a4088b00ef41d1bc9c694d8edf035d" name="Web: доанализ требований 3" color="#8cb6ce" meeting="false" start="2024-12-02" duration="20" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="124" uid="1d890ba4b77c40cc9a2794141e7bde62" name="QA обвязки 2" color="#ff33ff" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false"/>
-        <task id="125" uid="652f3ca9617749e6a811ce0ce3a0541d" name="Общее QA" color="#ff33ff" meeting="false" start="2024-12-16" duration="10" complete="0" expand="true" cost-manual-value="15.0" cost-calculated="false"/>
-        <task id="85" uid="84ea07d398364f4aa3d257974669f915" name="Модификация страницы просмотра лабораторных - для студента" color="#ffff99" meeting="false" start="2024-12-02" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
-        <task id="87" uid="798a8a3002e14a0da907782706b58b91" name="Модификация страницы просмотра лабораторных - для учителя" color="#ffff99" meeting="false" start="2024-12-02" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
-        <task id="86" uid="dbe0ac5d698a4072a1ad4a11bf6e11a7" name="Модификация страницы просмотра лабораторной - для студента" color="#ffff99" meeting="false" start="2024-12-09" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
-        <task id="88" uid="e8d1609cd266424c9e19e3a8d02f71b8" name="Модификация страницы просмотра лабораторной - для учителя" color="#ffff99" meeting="false" start="2024-12-09" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
-        <task id="93" uid="34e3c4c86b08488c8661689ce9358d18" name="Модификация страницы просмотра попытки сдачи - для преподавателя" color="#ffff99" meeting="false" start="2024-12-16" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
-        <task id="115" uid="4c7fa5b6046b4a5d8ccf83a84890c1e5" name="Переход к лабораторной по студенту" color="#ffff99" meeting="false" start="2024-12-02" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
-        <task id="116" uid="f38ef31891cb474eb1b8c963633282dd" name="Фронт: исправление багов" color="#ffff99" meeting="false" start="2024-12-02" duration="20" complete="0" expand="true" cost-manual-value="20.0" cost-calculated="false"/>
-        <task id="117" uid="e1d725603db44e839308b301e03f712d" name="Бэк: исправление багов" color="#0000ff" meeting="false" start="2024-12-02" duration="20" complete="0" expand="true" cost-manual-value="20.0" cost-calculated="false"/>
-        <task id="111" uid="2fdb7386f0b5440393ba1c20e311a8e4" name="Данные для рейтинговой таблицы" color="#0000ff" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
-        <task id="113" uid="5baaf7afd794471db0df51ec0faa53ac" name="Интеграция рейтинговой таблицы" meeting="false" start="2024-12-23" duration="5" complete="0" expand="true" cost-manual-value="8.0" cost-calculated="false"/>
-        <task id="112" uid="5b911710cfda4775baf301bfe0517865" name="Рейтинговая таблица" color="#ffff99" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="10.0" cost-calculated="false"/>
-        <task id="114" uid="17404c1da305462ba2d99ef56721f858" name="Сортировки по срезу" color="#ffff99" meeting="false" start="2024-12-16" duration="5" complete="0" expand="true" cost-manual-value="1.5" cost-calculated="false"/>
-        <task id="43" uid="ef3d5f5f88e842b39ba4dfe6bdbedc15" name="Тесты под valgrind и санитайзерами" color="#99ffcc" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="44" uid="6619cac03cb4476f89a58827132f7b65" name="Тесты с ограниченными ресурсами" color="#99ffcc" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="128" uid="2cb75baaa8bd482d9ead1ad4b5ee2a67" name="Интеграция: дополнительные тесты" color="#8cb6ce" meeting="false" start="2024-12-16" duration="5" complete="0" expand="true" cost-manual-value="16.0" cost-calculated="false"/>
-        <task id="47" uid="bd7c3d474cfb4c3caf509ffc10cbca5d" name="Exec: ограничение fs, mount" color="#ff9900" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
-        <task id="48" uid="0f238704aaf3403eb6e7865f15374762" name="Exec: ограничение network workspace" color="#ff9900" meeting="false" start="2024-12-02" duration="10" complete="0" expand="true" cost-manual-value="6.0" cost-calculated="false"/>
     </tasks>
     <resources>
         <resource id="0" name="Manager-QA" function="Default:1" contacts="" phone=""/>
@@ -400,7 +517,6 @@
         <allocation task-id="8" resource-id="14" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="21" resource-id="14" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="34" resource-id="14" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
-        <allocation task-id="41" resource-id="14" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="9" resource-id="15" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="22" resource-id="15" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
         <allocation task-id="35" resource-id="15" function="SoftwareDevelopment:8" responsible="true" load="100.0"/>
