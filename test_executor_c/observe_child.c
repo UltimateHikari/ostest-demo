@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <sys/wait.h>
 #include <sys/ptrace.h>
+#include <sys/stat.h>
+#include <errno.h>
 
 int observe_child(__pid_t pid) {
     int result;
@@ -23,8 +25,14 @@ int observe_child(__pid_t pid) {
 
     // И тут возникает прикол: uut не наш child (мы сделали двойной fork())
     // Нельзя ждать его завершения через wait() / waitpid()
-    //TODO: сделать ожидание завершения процесса каким-то способом. Пока что просто делаем sleep...
-    sleep(10000000);
 
-    //printf("Uut завершился со статусом %d\n", status);
+    struct stat stat_res;
+    char stat_file[64] = {0};
+    sprintf(stat_file, "/proc/%d", pid);
+    while ((result = stat(stat_file, &stat_res)) != -1) {}
+    if (errno != ENOENT) {
+        return error_out(__LOG);
+    }
+
+    printf("UUT успешно завершился\n");
 }

@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <pthread.h>
-#include <errno.h>
 #include <string.h>
 #include <sys/wait.h>
 
@@ -15,15 +13,13 @@ void* func(void *ptr) {
 int main() {
     printf("PID IN UUT: %d\n", getpid());
 
-    printf("Hello World\n");
-
     system("pwd");
 
     system("ps faux");
 
-    sleep(10);
+    sleep(100000);
 
-    printf("Started\n");
+    printf("Child sleep end\n");
 
     int pipedes[2];
     if (pipe(pipedes) == -1) {
@@ -100,18 +96,6 @@ int main() {
     }
 
     printf("Child ended with status %d\n", status);
-
-//    pthread_t t;
-//    pthread_create(&t, NULL, func, NULL);
-//    if (errno != 0) {
-//        perror("Error");
-//    }
-
-//    FILE *f = fopen("./Makefile", "r");
-
-//    int *arr = calloc(10000, sizeof(int));
-//    sleep(20);
-//    free(arr);
 
     return 0;
 }

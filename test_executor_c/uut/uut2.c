@@ -1,10 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <pthread.h>
-#include <errno.h>
 #include <string.h>
-#include <sys/wait.h>
 
 int main() {
     FILE *file = fopen("/home/123.txt", "w");
