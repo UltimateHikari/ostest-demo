@@ -17,7 +17,7 @@ int main() {
 
     system("ps faux");
 
-    sleep(100000);
+    sleep(5);
 
     printf("Child sleep end\n");
 
